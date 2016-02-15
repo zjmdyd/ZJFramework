@@ -16,6 +16,19 @@
 		383F0BC91C5701D300B7CA6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 383F0BC71C5701D300B7CA6D /* LaunchScreen.storyboard */; };
 		383F0BD41C5701D300B7CA6D /* ZJFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 383F0BD31C5701D300B7CA6D /* ZJFrameworkTests.m */; };
 		383F0BDF1C5701D300B7CA6D /* ZJFrameworkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 383F0BDE1C5701D300B7CA6D /* ZJFrameworkUITests.m */; };
+		383F0C041C57031000B7CA6D /* ZJDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 383F0BEE1C57031000B7CA6D /* ZJDatePicker.m */; };
+		383F0C051C57031000B7CA6D /* ZJFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 383F0BF11C57031000B7CA6D /* ZJFooterView.m */; };
+		383F0C061C57031000B7CA6D /* RWKnobControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 383F0BF41C57031000B7CA6D /* RWKnobControl.m */; };
+		383F0C071C57031000B7CA6D /* RWKnobRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 383F0BF61C57031000B7CA6D /* RWKnobRender.m */; };
+		383F0C081C57031000B7CA6D /* RWRotationGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 383F0BF81C57031000B7CA6D /* RWRotationGestureRecognizer.m */; };
+		383F0C091C57031000B7CA6D /* ZJPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 383F0BFB1C57031000B7CA6D /* ZJPickerView.m */; };
+		383F0C0B1C57031000B7CA6D /* ZJSearchingContentsLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 383F0C011C57031000B7CA6D /* ZJSearchingContentsLayer.m */; };
+		383F0C0C1C57031000B7CA6D /* ZJSearchingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 383F0C031C57031000B7CA6D /* ZJSearchingView.m */; };
+		383F0C1D1C57165200B7CA6D /* ZJScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 383F0C1C1C57165200B7CA6D /* ZJScrollView.m */; };
+		383F0C201C5716F700B7CA6D /* ZJTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 383F0C1F1C5716F700B7CA6D /* ZJTestViewController.m */; };
+		383F0C241C57515B00B7CA6D /* ZJBLEDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 383F0C231C57515B00B7CA6D /* ZJBLEDevice.m */; };
+		383F0C271C57528A00B7CA6D /* ZJBLEDeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 383F0C261C57528A00B7CA6D /* ZJBLEDeviceManager.m */; };
+		383F0C2D1C576BE500B7CA6D /* ZJBLETableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 383F0C2C1C576BE500B7CA6D /* ZJBLETableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +66,32 @@
 		383F0BDA1C5701D300B7CA6D /* ZJFrameworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZJFrameworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		383F0BDE1C5701D300B7CA6D /* ZJFrameworkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJFrameworkUITests.m; sourceTree = "<group>"; };
 		383F0BE01C5701D300B7CA6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		383F0BED1C57031000B7CA6D /* ZJDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJDatePicker.h; sourceTree = "<group>"; };
+		383F0BEE1C57031000B7CA6D /* ZJDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJDatePicker.m; sourceTree = "<group>"; };
+		383F0BF01C57031000B7CA6D /* ZJFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJFooterView.h; sourceTree = "<group>"; };
+		383F0BF11C57031000B7CA6D /* ZJFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJFooterView.m; sourceTree = "<group>"; };
+		383F0BF31C57031000B7CA6D /* RWKnobControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWKnobControl.h; sourceTree = "<group>"; };
+		383F0BF41C57031000B7CA6D /* RWKnobControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWKnobControl.m; sourceTree = "<group>"; };
+		383F0BF51C57031000B7CA6D /* RWKnobRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWKnobRender.h; sourceTree = "<group>"; };
+		383F0BF61C57031000B7CA6D /* RWKnobRender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWKnobRender.m; sourceTree = "<group>"; };
+		383F0BF71C57031000B7CA6D /* RWRotationGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWRotationGestureRecognizer.h; sourceTree = "<group>"; };
+		383F0BF81C57031000B7CA6D /* RWRotationGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWRotationGestureRecognizer.m; sourceTree = "<group>"; };
+		383F0BFA1C57031000B7CA6D /* ZJPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJPickerView.h; sourceTree = "<group>"; };
+		383F0BFB1C57031000B7CA6D /* ZJPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJPickerView.m; sourceTree = "<group>"; };
+		383F0C001C57031000B7CA6D /* ZJSearchingContentsLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJSearchingContentsLayer.h; sourceTree = "<group>"; };
+		383F0C011C57031000B7CA6D /* ZJSearchingContentsLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJSearchingContentsLayer.m; sourceTree = "<group>"; };
+		383F0C021C57031000B7CA6D /* ZJSearchingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJSearchingView.h; sourceTree = "<group>"; };
+		383F0C031C57031000B7CA6D /* ZJSearchingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJSearchingView.m; sourceTree = "<group>"; };
+		383F0C1B1C57165200B7CA6D /* ZJScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJScrollView.h; sourceTree = "<group>"; };
+		383F0C1C1C57165200B7CA6D /* ZJScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJScrollView.m; sourceTree = "<group>"; };
+		383F0C1E1C5716F700B7CA6D /* ZJTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJTestViewController.h; sourceTree = "<group>"; };
+		383F0C1F1C5716F700B7CA6D /* ZJTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJTestViewController.m; sourceTree = "<group>"; };
+		383F0C221C57515B00B7CA6D /* ZJBLEDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJBLEDevice.h; sourceTree = "<group>"; };
+		383F0C231C57515B00B7CA6D /* ZJBLEDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJBLEDevice.m; sourceTree = "<group>"; };
+		383F0C251C57528A00B7CA6D /* ZJBLEDeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJBLEDeviceManager.h; sourceTree = "<group>"; };
+		383F0C261C57528A00B7CA6D /* ZJBLEDeviceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJBLEDeviceManager.m; sourceTree = "<group>"; };
+		383F0C2B1C576BE500B7CA6D /* ZJBLETableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJBLETableViewController.h; sourceTree = "<group>"; };
+		383F0C2C1C576BE500B7CA6D /* ZJBLETableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJBLETableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,11 +142,22 @@
 		383F0BB51C5701D300B7CA6D /* ZJFramework */ = {
 			isa = PBXGroup;
 			children = (
+				383F0BBF1C5701D300B7CA6D /* Main.storyboard */,
 				383F0BB91C5701D300B7CA6D /* AppDelegate.h */,
 				383F0BBA1C5701D300B7CA6D /* AppDelegate.m */,
 				383F0BBC1C5701D300B7CA6D /* ViewController.h */,
 				383F0BBD1C5701D300B7CA6D /* ViewController.m */,
-				383F0BBF1C5701D300B7CA6D /* Main.storyboard */,
+				383F0C1E1C5716F700B7CA6D /* ZJTestViewController.h */,
+				383F0C1F1C5716F700B7CA6D /* ZJTestViewController.m */,
+				383F0C2B1C576BE500B7CA6D /* ZJBLETableViewController.h */,
+				383F0C2C1C576BE500B7CA6D /* ZJBLETableViewController.m */,
+				383F0BEC1C57031000B7CA6D /* ZJDatePicker */,
+				383F0BEF1C57031000B7CA6D /* ZJFooterView */,
+				383F0BF21C57031000B7CA6D /* ZJKnobControl */,
+				383F0BF91C57031000B7CA6D /* ZJPickerView */,
+				383F0C1A1C57165200B7CA6D /* ZJScrollView */,
+				383F0BFF1C57031000B7CA6D /* ZJSearchingView */,
+				383F0C211C5750CD00B7CA6D /* ZJCoreBluetooth */,
 				383F0BC51C5701D300B7CA6D /* Assets.xcassets */,
 				383F0BC71C5701D300B7CA6D /* LaunchScreen.storyboard */,
 				383F0BCA1C5701D300B7CA6D /* Info.plist */,
@@ -141,6 +191,78 @@
 				383F0BE01C5701D300B7CA6D /* Info.plist */,
 			);
 			path = ZJFrameworkUITests;
+			sourceTree = "<group>";
+		};
+		383F0BEC1C57031000B7CA6D /* ZJDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				383F0BED1C57031000B7CA6D /* ZJDatePicker.h */,
+				383F0BEE1C57031000B7CA6D /* ZJDatePicker.m */,
+			);
+			path = ZJDatePicker;
+			sourceTree = "<group>";
+		};
+		383F0BEF1C57031000B7CA6D /* ZJFooterView */ = {
+			isa = PBXGroup;
+			children = (
+				383F0BF01C57031000B7CA6D /* ZJFooterView.h */,
+				383F0BF11C57031000B7CA6D /* ZJFooterView.m */,
+			);
+			path = ZJFooterView;
+			sourceTree = "<group>";
+		};
+		383F0BF21C57031000B7CA6D /* ZJKnobControl */ = {
+			isa = PBXGroup;
+			children = (
+				383F0BF31C57031000B7CA6D /* RWKnobControl.h */,
+				383F0BF41C57031000B7CA6D /* RWKnobControl.m */,
+				383F0BF51C57031000B7CA6D /* RWKnobRender.h */,
+				383F0BF61C57031000B7CA6D /* RWKnobRender.m */,
+				383F0BF71C57031000B7CA6D /* RWRotationGestureRecognizer.h */,
+				383F0BF81C57031000B7CA6D /* RWRotationGestureRecognizer.m */,
+			);
+			path = ZJKnobControl;
+			sourceTree = "<group>";
+		};
+		383F0BF91C57031000B7CA6D /* ZJPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				383F0BFA1C57031000B7CA6D /* ZJPickerView.h */,
+				383F0BFB1C57031000B7CA6D /* ZJPickerView.m */,
+			);
+			path = ZJPickerView;
+			sourceTree = "<group>";
+		};
+		383F0BFF1C57031000B7CA6D /* ZJSearchingView */ = {
+			isa = PBXGroup;
+			children = (
+				383F0C001C57031000B7CA6D /* ZJSearchingContentsLayer.h */,
+				383F0C011C57031000B7CA6D /* ZJSearchingContentsLayer.m */,
+				383F0C021C57031000B7CA6D /* ZJSearchingView.h */,
+				383F0C031C57031000B7CA6D /* ZJSearchingView.m */,
+			);
+			path = ZJSearchingView;
+			sourceTree = "<group>";
+		};
+		383F0C1A1C57165200B7CA6D /* ZJScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				383F0C1B1C57165200B7CA6D /* ZJScrollView.h */,
+				383F0C1C1C57165200B7CA6D /* ZJScrollView.m */,
+			);
+			name = ZJScrollView;
+			path = ZJPickerView/ZJScrollView;
+			sourceTree = "<group>";
+		};
+		383F0C211C5750CD00B7CA6D /* ZJCoreBluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				383F0C221C57515B00B7CA6D /* ZJBLEDevice.h */,
+				383F0C231C57515B00B7CA6D /* ZJBLEDevice.m */,
+				383F0C251C57528A00B7CA6D /* ZJBLEDeviceManager.h */,
+				383F0C261C57528A00B7CA6D /* ZJBLEDeviceManager.m */,
+			);
+			path = ZJCoreBluetooth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +327,7 @@
 		383F0BAB1C5701D300B7CA6D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ZJ;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = ZJ;
 				TargetAttributes = {
@@ -273,10 +396,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				383F0C091C57031000B7CA6D /* ZJPickerView.m in Sources */,
+				383F0C271C57528A00B7CA6D /* ZJBLEDeviceManager.m in Sources */,
 				383F0BBE1C5701D300B7CA6D /* ViewController.m in Sources */,
+				383F0C1D1C57165200B7CA6D /* ZJScrollView.m in Sources */,
+				383F0C041C57031000B7CA6D /* ZJDatePicker.m in Sources */,
+				383F0C201C5716F700B7CA6D /* ZJTestViewController.m in Sources */,
 				383F0BBB1C5701D300B7CA6D /* AppDelegate.m in Sources */,
+				383F0C051C57031000B7CA6D /* ZJFooterView.m in Sources */,
+				383F0C081C57031000B7CA6D /* RWRotationGestureRecognizer.m in Sources */,
+				383F0C071C57031000B7CA6D /* RWKnobRender.m in Sources */,
+				383F0C241C57515B00B7CA6D /* ZJBLEDevice.m in Sources */,
+				383F0C0B1C57031000B7CA6D /* ZJSearchingContentsLayer.m in Sources */,
+				383F0C2D1C576BE500B7CA6D /* ZJBLETableViewController.m in Sources */,
 				383F0BC41C5701D300B7CA6D /* ZJFramework.xcdatamodeld in Sources */,
 				383F0BB81C5701D300B7CA6D /* main.m in Sources */,
+				383F0C0C1C57031000B7CA6D /* ZJSearchingView.m in Sources */,
+				383F0C061C57031000B7CA6D /* RWKnobControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
