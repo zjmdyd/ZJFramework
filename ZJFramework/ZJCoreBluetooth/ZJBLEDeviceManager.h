@@ -63,4 +63,9 @@ typedef void(^completionHandle)(id obj);
  */
 - (void)cancelBLEDevicesConnection:(NSArray *)devices completion:(completionHandle)completion;
 
+/**
+ *  停止扫描
+ */
+- (void)stopScan;
+
 @end

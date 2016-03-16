@@ -46,7 +46,7 @@ typedef void(^completionHandle)(BOOL finish);
 @property (nonatomic, strong) UIColor *rightButtonTitleColor;
 
 /**
- *  弹窗中间提示框颜色
+ *  弹窗顶部中间提示框文字颜色
  */
 @property (nonatomic, strong) UIColor *mentionTitleColor;
 

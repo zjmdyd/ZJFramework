@@ -39,6 +39,7 @@ static NSString *CellID = @"cell";
                     @"ZJPickerView",
                     @"ZJScrollView",
                     @"ZJSearchingView",
+                    @"ZJNaviScrollView",
                     ];
     NSArray *s2 = @[
                     @"ZJBLEDeviceManager",

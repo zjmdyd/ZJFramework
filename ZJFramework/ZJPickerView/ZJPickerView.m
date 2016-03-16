@@ -11,7 +11,7 @@
 @interface ZJPickerView () <UIPickerViewDataSource, UIPickerViewDelegate>
 
 @property (nonatomic, strong) UIView *bgView;
-@property (nonatomic, strong) UIView *bottomView;
+@property (nonatomic, strong) UIView *bottomView;   // 底部的View
 @property (nonatomic, strong) UIView *topView;      // bottomView的topView
 @property (nonatomic, strong) UILabel *mentionLabel;
 @property (nonatomic, strong) UIPickerView *pickerView;

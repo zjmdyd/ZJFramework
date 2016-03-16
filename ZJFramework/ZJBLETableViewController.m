@@ -30,12 +30,11 @@
     self.bleManager = [ZJBLEDeviceManager shareManagerDidUpdateStateHandle:^(id obj) {
         NSLog(@"state = %@", obj);
     }];
-    
+    NSLog(@"manager = %@", self.bleManager);//manager = <ZJBLEDeviceManager: 0x15d36b50> manager = <ZJBLEDeviceManager: 0x15d36b50>
     self.bleManager = [ZJBLEDeviceManager shareManager];
     
     [self.bleManager scanDeviceWithServiceUUIDs:nil completion:^(id obj) {
         dispatch_async(dispatch_get_main_queue(), ^{
-//            NSLog(@"dis = %@\nconn = %@", self.bleManager.discoveredBLEDevices, self.bleManager.connectedBLEDevices);
             [self.tableView reloadData];
         });
     }];
@@ -87,6 +86,10 @@
             NSLog(@"连接完成");
             dispatch_async(dispatch_get_main_queue(), ^{
                 [self.tableView reloadData];
+                ZJBLEDevice *d = obj;
+                if ([d isKindOfClass:[ZJBLEDevice class]]) {
+                    [d discoverService];
+                }
             });
         }];
     }else {
@@ -144,8 +147,17 @@
 }
 */
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [self.bleManager stopScan];
+}
+
+- (void)dealloc {
+    NSLog(@"%s", __func__);
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
+//  NSLog(@"dis = %@\nconn = %@", self.bleManager.discoveredBLEDevices, self.bleManager.connectedBLEDevices);
 
 @end

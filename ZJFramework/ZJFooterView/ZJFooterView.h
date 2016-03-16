@@ -31,7 +31,8 @@
 - (instancetype)initWithFrame:(CGRect)frame title:(NSString *)title superView:(UIView *)superView;
 
 @property (nonatomic, copy  ) NSString *title;
-@property (nonatomic, strong) UIColor *backgroundColor;
 @property (nonatomic, strong) UIColor *titleColor;
+@property (nonatomic, strong) UIColor *buttonBgColor;
+@property (nonatomic, assign) BOOL enable;  // 控制button
 
 @end

@@ -15,7 +15,9 @@
 
 #import "ZJSearchingView.h"
 
-@interface ZJTestViewController ()<ZJPickerViewDataSource, ZJPickerViewDelegate, ZJScrollViewDelegate> {
+#import "ZJNaviScrollView.h"
+
+@interface ZJTestViewController ()<ZJPickerViewDataSource, ZJPickerViewDelegate, ZJScrollViewDelegate, ZJNaviScrollViewDelegate> {
     NSArray *_frameworkTitles;
     
     NSMutableArray *_values;
@@ -83,6 +85,9 @@
 
 - (void)test1 {
     _datePicker = [[ZJDatePicker alloc] initWithSuperView:self.view datePickerMode:UIDatePickerModeDate];
+    [_datePicker showWithMentionText:@"" completion:^(BOOL finish) {
+        
+    }];
 }
 
 - (void)test2 {
@@ -105,8 +110,6 @@
 - (void)test5 {
     ZJScrollView *sc = [[ZJScrollView alloc] initWithSuperView:self.view imageNames:@[@"1", @"2", @"3"]];
     sc.bottomTitles = @[@"哈哈哈", @"呵呵呵呵"];
-    sc.hiddenPageControl = NO;
-    sc.cycleScrolledEnable = NO;
     sc.scrollDelegate = self;
 }
 
@@ -117,14 +120,28 @@
     [self.view addSubview:_searchView];
 }
 
+- (void)test7 {
+    ZJNaviScrollView *view = [[ZJNaviScrollView alloc] initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, 35) items:@[@"头条", @"财经", @"热点", @"NBA", @"深圳", @"订阅", @"房产", @"历史"]];
+    view.delegate = self;
+    [self.view addSubview:view];
+    self.view.backgroundColor = [UIColor orangeColor];
+}
+
 #pragma mark - ZJScrollViewDelegate
 
 - (void)zjScrollView:(ZJScrollView *)zjScrollView didClickButtonAtIndex:(NSInteger)buttongIndex {
     NSLog(@"index = %zd", buttongIndex);
     if (buttongIndex == 1) {
         zjScrollView.imageNames = @[@"3", @"2", @"1"];
-        zjScrollView.bottomTitles = @[@"哈哈哈", @"呵呵呵呵"];
+//        zjScrollView.bottomTitles = @[@"呵呵呵呵", @"哈哈哈"];
+//        zjScrollView.cycleScrolledEnable = !zjScrollView.isCycleScrolledEnable;
+        
+//        [self performSelector:@selector(func:) withObject:zjScrollView afterDelay:5.0];
     }
+}
+
+- (void)func:(ZJScrollView *)view {
+    view.cycleScrolledEnable = NO;
 }
 
 #pragma mark - ZJPickerViewDataSource
@@ -137,6 +154,12 @@
 
 - (NSString *)pickerView:(ZJPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
     return [NSString stringWithFormat:@"%@", _values[row]];
+}
+
+#pragma mark - ZJNaviScrollViewDelegate
+
+- (void)zjNaviScrollViewDidSelectItemAtIndex:(NSInteger)index {
+    NSLog(@"%s --> index=%zd", __func__, index);
 }
 
 - (void)didReceiveMemoryWarning {

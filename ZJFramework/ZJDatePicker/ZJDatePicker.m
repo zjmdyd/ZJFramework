@@ -196,7 +196,6 @@
     __block ZJDatePicker *picker = self;
     [self setHidden:NO comletion:^(BOOL finish) {
         picker.mentionLabel.text = text;
-        
         completion(YES);
     }];
 }
@@ -225,12 +224,10 @@
 }
 
 /**
- *  当date未赋初始值时,date = nil;
+ *  默认为datePicker的值;
  */
 - (NSDate *)date {
-    if (!_date) {
-        _date = self.datePicker.date;
-    }
+    _date = self.datePicker.date;
     return _date;
 }
 

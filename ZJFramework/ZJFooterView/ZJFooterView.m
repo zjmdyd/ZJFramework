@@ -14,16 +14,27 @@
 
 @end
 
+#define Width [UIScreen mainScreen].bounds.size.width
+
 @implementation ZJFooterView
 
-@synthesize backgroundColor = _backgroundColor;
 @synthesize titleColor = _titleColor;
+@synthesize buttonBgColor = _buttonBgColor;
 
 #pragma mark - init
 
 - (instancetype)initWithFrame:(CGRect)frame title:(NSString *)title {
     self = [ZJFooterView initWithFrame:frame title:title];
     
+    if (self) {
+        [self initSetting];
+    }
+    
+    return self;
+}
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
     if (self) {
         [self initSetting];
     }
@@ -44,13 +55,14 @@
 + (ZJFooterView *)initWithFrame:(CGRect)frame title:(NSString *)title {
     ZJFooterView *footView = [[ZJFooterView alloc] initWithFrame:frame];
     footView.title = title;
+    footView.enable = YES;
     return footView;
 }
 
 - (void)initSetting {
     self.button = [UIButton buttonWithType:UIButtonTypeSystem];
-    self.button.frame = CGRectMake(20, 15, self.frame.size.width - 40, self.frame.size.height - 30);
-    self.button.backgroundColor = self.backgroundColor;
+    self.button.frame = CGRectMake(20, 15, Width - 40, self.frame.size.height - 30);
+    self.button.backgroundColor = self.buttonBgColor;
     self.button.layer.cornerRadius = 8;
     self.button.layer.masksToBounds = YES;
     self.button.titleLabel.font = [UIFont systemFontOfSize:18];
@@ -68,9 +80,9 @@
 
 #pragma mark - setter
 
-- (void)setBackgroundColor:(UIColor *)backgroundColor {
-    _backgroundColor = backgroundColor;
-    self.button.backgroundColor = backgroundColor;
+- (void)setButtonBgColor:(UIColor *)buttonBgColor {
+    _buttonBgColor = buttonBgColor;
+    self.button.backgroundColor = _buttonBgColor;
 }
 
 - (void)setTitleColor:(UIColor *)titleColor {
@@ -83,13 +95,18 @@
     [self.button setTitle:title forState:UIControlStateNormal];
 }
 
+- (void)setEnable:(BOOL)enable {
+    _enable = enable;
+    self.button.enabled = _enable;
+}
+
 #pragma mark - getter
 
-- (UIColor *)backgroundColor {
-    if (!_backgroundColor) {
-        _backgroundColor = [UIColor redColor];
+- (UIColor *)buttonBgColor {
+    if (!_buttonBgColor) {
+        _buttonBgColor = [UIColor redColor];
     }
-    return _backgroundColor;
+    return _buttonBgColor;
 }
 
 - (UIColor *)titleColor {

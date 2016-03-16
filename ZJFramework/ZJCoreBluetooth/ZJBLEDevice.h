@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <CoreBluetooth/CoreBluetooth.h>
 
+typedef void(^completionHandle)(id obj);
+
 @interface ZJBLEDevice : NSObject
 
 /**
@@ -27,5 +29,10 @@
  */
 @property (nonatomic, strong) CBCentralManager *manager;
 
+@property (nonatomic, strong, readonly) NSArray *services;
+
+- (void)discoverService;
+
+- (void)writeValue:(NSData *)data forCharacteristic:(CBCharacteristic *)characteristic type:(CBCharacteristicWriteType)type completion:(completionHandle)completion;
 
 @end
