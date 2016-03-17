@@ -10,6 +10,8 @@
 #import "ZJTestViewController.h"
 #import "ZJBLETableViewController.h"
 
+#import "ZJCategory.h"
+
 @interface ViewController ()<UITableViewDataSource, UITableViewDelegate> {
     NSArray *_frameworkTitles;
 }
@@ -46,6 +48,7 @@ static NSString *CellID = @"cell";
                     ];
     
     _frameworkTitles = @[s1, s2];
+//    [self showMentionViewWithImgName:@"ic_user_96x96" text:@"暂无人头" superView:nil];
 }
 
 #pragma mark - UITableViewDataSource

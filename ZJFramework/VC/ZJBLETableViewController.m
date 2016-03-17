@@ -9,6 +9,7 @@
 #import "ZJBLETableViewController.h"
 #import "ZJBLEDeviceManager.h"
 #import "ZJBLEDevice.h"
+#import "ZJCategory.h"
 
 @interface ZJBLETableViewController ()
 
@@ -38,6 +39,8 @@
             [self.tableView reloadData];
         });
     }];
+    
+    [self showMentionViewWithImgName:@"ic_user_96x96" text:@"暂无人头" superView:nil];
 }
 
 #pragma mark - Table view data source

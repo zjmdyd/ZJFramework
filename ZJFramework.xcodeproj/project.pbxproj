@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		383F0BB81C5701D300B7CA6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 383F0BB71C5701D300B7CA6D /* main.m */; };
 		383F0BBB1C5701D300B7CA6D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 383F0BBA1C5701D300B7CA6D /* AppDelegate.m */; };
-		383F0BBE1C5701D300B7CA6D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 383F0BBD1C5701D300B7CA6D /* ViewController.m */; };
 		383F0BC11C5701D300B7CA6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 383F0BBF1C5701D300B7CA6D /* Main.storyboard */; };
 		383F0BC41C5701D300B7CA6D /* ZJFramework.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 383F0BC21C5701D300B7CA6D /* ZJFramework.xcdatamodeld */; };
 		383F0BC61C5701D300B7CA6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 383F0BC51C5701D300B7CA6D /* Assets.xcassets */; };
@@ -25,16 +24,19 @@
 		383F0C0B1C57031000B7CA6D /* ZJSearchingContentsLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 383F0C011C57031000B7CA6D /* ZJSearchingContentsLayer.m */; };
 		383F0C0C1C57031000B7CA6D /* ZJSearchingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 383F0C031C57031000B7CA6D /* ZJSearchingView.m */; };
 		383F0C1D1C57165200B7CA6D /* ZJScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 383F0C1C1C57165200B7CA6D /* ZJScrollView.m */; };
-		383F0C201C5716F700B7CA6D /* ZJTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 383F0C1F1C5716F700B7CA6D /* ZJTestViewController.m */; };
 		383F0C241C57515B00B7CA6D /* ZJBLEDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 383F0C231C57515B00B7CA6D /* ZJBLEDevice.m */; };
 		383F0C271C57528A00B7CA6D /* ZJBLEDeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 383F0C261C57528A00B7CA6D /* ZJBLEDeviceManager.m */; };
-		383F0C2D1C576BE500B7CA6D /* ZJBLETableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 383F0C2C1C576BE500B7CA6D /* ZJBLETableViewController.m */; };
 		385335861C7AB6B40033F77B /* ZJNaviScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 385335851C7AB6B40033F77B /* ZJNaviScrollView.m */; };
 		385335921C7AE32D0033F77B /* ZJNaviScrollCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3853358E1C7AE32D0033F77B /* ZJNaviScrollCollectionViewCell.m */; };
 		385335931C7AE32D0033F77B /* ZJNaviScrollCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3853358F1C7AE32D0033F77B /* ZJNaviScrollCollectionViewCell.xib */; };
 		385335971C7AF85E0033F77B /* ZJNaviScrollButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 385335961C7AF85E0033F77B /* ZJNaviScrollButton.m */; };
 		3853359A1C7B085A0033F77B /* ZJNaviDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 385335991C7B085A0033F77B /* ZJNaviDetailView.m */; };
-		386899B11C7D84930009316D /* ZJLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 386899B01C7D84930009316D /* ZJLoginManager.m */; };
+		385B856E1C9A551800970191 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 385B85691C9A551800970191 /* ViewController.m */; };
+		385B856F1C9A551800970191 /* ZJBLETableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 385B856B1C9A551800970191 /* ZJBLETableViewController.m */; };
+		385B85701C9A551800970191 /* ZJTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 385B856D1C9A551800970191 /* ZJTestViewController.m */; };
+		385B85741C9A558A00970191 /* ZJLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 385B85731C9A558A00970191 /* ZJLoginManager.m */; };
+		385B857D1C9A7E0D00970191 /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 385B857A1C9A7E0D00970191 /* UIViewExt.m */; };
+		385B857E1C9A7E0D00970191 /* ZJCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 385B857C1C9A7E0D00970191 /* ZJCategory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +61,6 @@
 		383F0BB71C5701D300B7CA6D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		383F0BB91C5701D300B7CA6D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		383F0BBA1C5701D300B7CA6D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		383F0BBC1C5701D300B7CA6D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		383F0BBD1C5701D300B7CA6D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		383F0BC01C5701D300B7CA6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		383F0BC31C5701D300B7CA6D /* ZJFramework.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ZJFramework.xcdatamodel; sourceTree = "<group>"; };
 		383F0BC51C5701D300B7CA6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -90,14 +90,10 @@
 		383F0C031C57031000B7CA6D /* ZJSearchingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJSearchingView.m; sourceTree = "<group>"; };
 		383F0C1B1C57165200B7CA6D /* ZJScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJScrollView.h; sourceTree = "<group>"; };
 		383F0C1C1C57165200B7CA6D /* ZJScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJScrollView.m; sourceTree = "<group>"; };
-		383F0C1E1C5716F700B7CA6D /* ZJTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJTestViewController.h; sourceTree = "<group>"; };
-		383F0C1F1C5716F700B7CA6D /* ZJTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJTestViewController.m; sourceTree = "<group>"; };
 		383F0C221C57515B00B7CA6D /* ZJBLEDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJBLEDevice.h; sourceTree = "<group>"; };
 		383F0C231C57515B00B7CA6D /* ZJBLEDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJBLEDevice.m; sourceTree = "<group>"; };
 		383F0C251C57528A00B7CA6D /* ZJBLEDeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJBLEDeviceManager.h; sourceTree = "<group>"; };
 		383F0C261C57528A00B7CA6D /* ZJBLEDeviceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJBLEDeviceManager.m; sourceTree = "<group>"; };
-		383F0C2B1C576BE500B7CA6D /* ZJBLETableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJBLETableViewController.h; sourceTree = "<group>"; };
-		383F0C2C1C576BE500B7CA6D /* ZJBLETableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJBLETableViewController.m; sourceTree = "<group>"; };
 		385335841C7AB6B40033F77B /* ZJNaviScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJNaviScrollView.h; sourceTree = "<group>"; };
 		385335851C7AB6B40033F77B /* ZJNaviScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJNaviScrollView.m; sourceTree = "<group>"; };
 		3853358D1C7AE32D0033F77B /* ZJNaviScrollCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJNaviScrollCollectionViewCell.h; sourceTree = "<group>"; };
@@ -107,8 +103,18 @@
 		385335961C7AF85E0033F77B /* ZJNaviScrollButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJNaviScrollButton.m; sourceTree = "<group>"; };
 		385335981C7B085A0033F77B /* ZJNaviDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJNaviDetailView.h; sourceTree = "<group>"; };
 		385335991C7B085A0033F77B /* ZJNaviDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJNaviDetailView.m; sourceTree = "<group>"; };
-		386899AF1C7D84930009316D /* ZJLoginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLoginManager.h; sourceTree = "<group>"; };
-		386899B01C7D84930009316D /* ZJLoginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLoginManager.m; sourceTree = "<group>"; };
+		385B85681C9A551800970191 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		385B85691C9A551800970191 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		385B856A1C9A551800970191 /* ZJBLETableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJBLETableViewController.h; sourceTree = "<group>"; };
+		385B856B1C9A551800970191 /* ZJBLETableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJBLETableViewController.m; sourceTree = "<group>"; };
+		385B856C1C9A551800970191 /* ZJTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJTestViewController.h; sourceTree = "<group>"; };
+		385B856D1C9A551800970191 /* ZJTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJTestViewController.m; sourceTree = "<group>"; };
+		385B85721C9A558A00970191 /* ZJLoginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJLoginManager.h; sourceTree = "<group>"; };
+		385B85731C9A558A00970191 /* ZJLoginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJLoginManager.m; sourceTree = "<group>"; };
+		385B85791C9A7E0D00970191 /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
+		385B857A1C9A7E0D00970191 /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
+		385B857B1C9A7E0D00970191 /* ZJCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJCategory.h; sourceTree = "<group>"; };
+		385B857C1C9A7E0D00970191 /* ZJCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJCategory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +145,7 @@
 		383F0BAA1C5701D300B7CA6D = {
 			isa = PBXGroup;
 			children = (
+				383F0BBF1C5701D300B7CA6D /* Main.storyboard */,
 				383F0BB51C5701D300B7CA6D /* ZJFramework */,
 				383F0BD21C5701D300B7CA6D /* ZJFrameworkTests */,
 				383F0BDD1C5701D300B7CA6D /* ZJFrameworkUITests */,
@@ -159,17 +166,11 @@
 		383F0BB51C5701D300B7CA6D /* ZJFramework */ = {
 			isa = PBXGroup;
 			children = (
-				383F0BBF1C5701D300B7CA6D /* Main.storyboard */,
 				383F0BB91C5701D300B7CA6D /* AppDelegate.h */,
 				383F0BBA1C5701D300B7CA6D /* AppDelegate.m */,
-				383F0BBC1C5701D300B7CA6D /* ViewController.h */,
-				383F0BBD1C5701D300B7CA6D /* ViewController.m */,
-				383F0C1E1C5716F700B7CA6D /* ZJTestViewController.h */,
-				383F0C1F1C5716F700B7CA6D /* ZJTestViewController.m */,
-				383F0C2B1C576BE500B7CA6D /* ZJBLETableViewController.h */,
-				383F0C2C1C576BE500B7CA6D /* ZJBLETableViewController.m */,
-				386899AF1C7D84930009316D /* ZJLoginManager.h */,
-				386899B01C7D84930009316D /* ZJLoginManager.m */,
+				385B85671C9A551800970191 /* VC */,
+				385B85781C9A7E0D00970191 /* Category */,
+				385B85711C9A558A00970191 /* ZJLoginManager */,
 				383F0BEC1C57031000B7CA6D /* ZJDatePicker */,
 				383F0BEF1C57031000B7CA6D /* ZJFooterView */,
 				383F0BF21C57031000B7CA6D /* ZJKnobControl */,
@@ -309,6 +310,39 @@
 			path = xib;
 			sourceTree = "<group>";
 		};
+		385B85671C9A551800970191 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				385B85681C9A551800970191 /* ViewController.h */,
+				385B85691C9A551800970191 /* ViewController.m */,
+				385B856A1C9A551800970191 /* ZJBLETableViewController.h */,
+				385B856B1C9A551800970191 /* ZJBLETableViewController.m */,
+				385B856C1C9A551800970191 /* ZJTestViewController.h */,
+				385B856D1C9A551800970191 /* ZJTestViewController.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		385B85711C9A558A00970191 /* ZJLoginManager */ = {
+			isa = PBXGroup;
+			children = (
+				385B85721C9A558A00970191 /* ZJLoginManager.h */,
+				385B85731C9A558A00970191 /* ZJLoginManager.m */,
+			);
+			path = ZJLoginManager;
+			sourceTree = "<group>";
+		};
+		385B85781C9A7E0D00970191 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				385B85791C9A7E0D00970191 /* UIViewExt.h */,
+				385B857A1C9A7E0D00970191 /* UIViewExt.m */,
+				385B857B1C9A7E0D00970191 /* ZJCategory.h */,
+				385B857C1C9A7E0D00970191 /* ZJCategory.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -444,24 +478,26 @@
 			files = (
 				383F0C091C57031000B7CA6D /* ZJPickerView.m in Sources */,
 				383F0C271C57528A00B7CA6D /* ZJBLEDeviceManager.m in Sources */,
-				383F0BBE1C5701D300B7CA6D /* ViewController.m in Sources */,
 				383F0C1D1C57165200B7CA6D /* ZJScrollView.m in Sources */,
 				383F0C041C57031000B7CA6D /* ZJDatePicker.m in Sources */,
-				383F0C201C5716F700B7CA6D /* ZJTestViewController.m in Sources */,
 				3853359A1C7B085A0033F77B /* ZJNaviDetailView.m in Sources */,
 				383F0BBB1C5701D300B7CA6D /* AppDelegate.m in Sources */,
 				383F0C051C57031000B7CA6D /* ZJFooterView.m in Sources */,
+				385B857E1C9A7E0D00970191 /* ZJCategory.m in Sources */,
 				383F0C081C57031000B7CA6D /* RWRotationGestureRecognizer.m in Sources */,
 				383F0C071C57031000B7CA6D /* RWKnobRender.m in Sources */,
 				383F0C241C57515B00B7CA6D /* ZJBLEDevice.m in Sources */,
 				383F0C0B1C57031000B7CA6D /* ZJSearchingContentsLayer.m in Sources */,
 				385335971C7AF85E0033F77B /* ZJNaviScrollButton.m in Sources */,
-				383F0C2D1C576BE500B7CA6D /* ZJBLETableViewController.m in Sources */,
-				386899B11C7D84930009316D /* ZJLoginManager.m in Sources */,
 				383F0BC41C5701D300B7CA6D /* ZJFramework.xcdatamodeld in Sources */,
 				383F0BB81C5701D300B7CA6D /* main.m in Sources */,
+				385B85701C9A551800970191 /* ZJTestViewController.m in Sources */,
+				385B856E1C9A551800970191 /* ViewController.m in Sources */,
 				385335861C7AB6B40033F77B /* ZJNaviScrollView.m in Sources */,
+				385B85741C9A558A00970191 /* ZJLoginManager.m in Sources */,
 				383F0C0C1C57031000B7CA6D /* ZJSearchingView.m in Sources */,
+				385B856F1C9A551800970191 /* ZJBLETableViewController.m in Sources */,
+				385B857D1C9A7E0D00970191 /* UIViewExt.m in Sources */,
 				385335921C7AE32D0033F77B /* ZJNaviScrollCollectionViewCell.m in Sources */,
 				383F0C061C57031000B7CA6D /* RWKnobControl.m in Sources */,
 			);
@@ -505,6 +541,7 @@
 				383F0BC01C5701D300B7CA6D /* Base */,
 			);
 			name = Main.storyboard;
+			path = ZJFramework;
 			sourceTree = "<group>";
 		};
 		383F0BC71C5701D300B7CA6D /* LaunchScreen.storyboard */ = {

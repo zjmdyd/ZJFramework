@@ -30,4 +30,5 @@ static ZJLoginManager *_manager = nil;
 + (void)registerWithParams:(NSDictionary *)params completion:(completionHandle)completion {
 
 }
+
 @end
