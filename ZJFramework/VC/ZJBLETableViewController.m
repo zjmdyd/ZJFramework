@@ -40,7 +40,7 @@
         });
     }];
     
-    [self showMentionViewWithImgName:@"ic_user_96x96" text:@"暂无人头" superView:nil];
+//    [self showMentionViewWithImgName:@"ic_user_96x96" text:@"暂无人头" superView:nil];
 }
 
 #pragma mark - Table view data source

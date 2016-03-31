@@ -50,7 +50,7 @@ typedef void(^completionHandle)(BOOL finish);
  */
 @property (nonatomic, strong) UIColor *mentionTitleColor;
 
-- (void)setHidden:(BOOL)hidden comletion:(completionHandle)comletion;
+- (void)setHidden:(BOOL)hidden completion:(completionHandle)comletion;
 
 /**
  *  弹窗时需要显示提示文字时调用该方法

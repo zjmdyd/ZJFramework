@@ -23,7 +23,6 @@
 		383F0C091C57031000B7CA6D /* ZJPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 383F0BFB1C57031000B7CA6D /* ZJPickerView.m */; };
 		383F0C0B1C57031000B7CA6D /* ZJSearchingContentsLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 383F0C011C57031000B7CA6D /* ZJSearchingContentsLayer.m */; };
 		383F0C0C1C57031000B7CA6D /* ZJSearchingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 383F0C031C57031000B7CA6D /* ZJSearchingView.m */; };
-		383F0C1D1C57165200B7CA6D /* ZJScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 383F0C1C1C57165200B7CA6D /* ZJScrollView.m */; };
 		383F0C241C57515B00B7CA6D /* ZJBLEDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 383F0C231C57515B00B7CA6D /* ZJBLEDevice.m */; };
 		383F0C271C57528A00B7CA6D /* ZJBLEDeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 383F0C261C57528A00B7CA6D /* ZJBLEDeviceManager.m */; };
 		385335861C7AB6B40033F77B /* ZJNaviScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 385335851C7AB6B40033F77B /* ZJNaviScrollView.m */; };
@@ -37,6 +36,13 @@
 		385B85741C9A558A00970191 /* ZJLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 385B85731C9A558A00970191 /* ZJLoginManager.m */; };
 		385B857D1C9A7E0D00970191 /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 385B857A1C9A7E0D00970191 /* UIViewExt.m */; };
 		385B857E1C9A7E0D00970191 /* ZJCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 385B857C1C9A7E0D00970191 /* ZJCategory.m */; };
+		385C022B1CAD133B00BD35A5 /* ZJScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 385C022A1CAD133B00BD35A5 /* ZJScrollView.m */; };
+		385C02441CAD15BF00BD35A5 /* ZJEventButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 385C023D1CAD15BF00BD35A5 /* ZJEventButton.m */; };
+		385C02451CAD15BF00BD35A5 /* ZJImageTextButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 385C023F1CAD15BF00BD35A5 /* ZJImageTextButton.m */; };
+		385C02461CAD15BF00BD35A5 /* ZJSexButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 385C02411CAD15BF00BD35A5 /* ZJSexButton.m */; };
+		385C02471CAD15BF00BD35A5 /* ZJStatusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 385C02431CAD15BF00BD35A5 /* ZJStatusButton.m */; };
+		385C024E1CAD15FC00BD35A5 /* ZJPointImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 385C024A1CAD15FC00BD35A5 /* ZJPointImageView.m */; };
+		385C024F1CAD15FC00BD35A5 /* ZJStarLevelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 385C024D1CAD15FC00BD35A5 /* ZJStarLevelView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,8 +94,6 @@
 		383F0C011C57031000B7CA6D /* ZJSearchingContentsLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJSearchingContentsLayer.m; sourceTree = "<group>"; };
 		383F0C021C57031000B7CA6D /* ZJSearchingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJSearchingView.h; sourceTree = "<group>"; };
 		383F0C031C57031000B7CA6D /* ZJSearchingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJSearchingView.m; sourceTree = "<group>"; };
-		383F0C1B1C57165200B7CA6D /* ZJScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJScrollView.h; sourceTree = "<group>"; };
-		383F0C1C1C57165200B7CA6D /* ZJScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJScrollView.m; sourceTree = "<group>"; };
 		383F0C221C57515B00B7CA6D /* ZJBLEDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJBLEDevice.h; sourceTree = "<group>"; };
 		383F0C231C57515B00B7CA6D /* ZJBLEDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJBLEDevice.m; sourceTree = "<group>"; };
 		383F0C251C57528A00B7CA6D /* ZJBLEDeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJBLEDeviceManager.h; sourceTree = "<group>"; };
@@ -115,6 +119,22 @@
 		385B857A1C9A7E0D00970191 /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
 		385B857B1C9A7E0D00970191 /* ZJCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJCategory.h; sourceTree = "<group>"; };
 		385B857C1C9A7E0D00970191 /* ZJCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJCategory.m; sourceTree = "<group>"; };
+		385C02291CAD133B00BD35A5 /* ZJScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJScrollView.h; sourceTree = "<group>"; };
+		385C022A1CAD133B00BD35A5 /* ZJScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJScrollView.m; sourceTree = "<group>"; };
+		385C023A1CAD157200BD35A5 /* ZJHeaderFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJHeaderFile.h; sourceTree = "<group>"; };
+		385C023C1CAD15BF00BD35A5 /* ZJEventButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJEventButton.h; sourceTree = "<group>"; };
+		385C023D1CAD15BF00BD35A5 /* ZJEventButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJEventButton.m; sourceTree = "<group>"; };
+		385C023E1CAD15BF00BD35A5 /* ZJImageTextButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJImageTextButton.h; sourceTree = "<group>"; };
+		385C023F1CAD15BF00BD35A5 /* ZJImageTextButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJImageTextButton.m; sourceTree = "<group>"; };
+		385C02401CAD15BF00BD35A5 /* ZJSexButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJSexButton.h; sourceTree = "<group>"; };
+		385C02411CAD15BF00BD35A5 /* ZJSexButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJSexButton.m; sourceTree = "<group>"; };
+		385C02421CAD15BF00BD35A5 /* ZJStatusButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJStatusButton.h; sourceTree = "<group>"; };
+		385C02431CAD15BF00BD35A5 /* ZJStatusButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJStatusButton.m; sourceTree = "<group>"; };
+		385C02491CAD15FC00BD35A5 /* ZJPointImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJPointImageView.h; sourceTree = "<group>"; };
+		385C024A1CAD15FC00BD35A5 /* ZJPointImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJPointImageView.m; sourceTree = "<group>"; };
+		385C024C1CAD15FC00BD35A5 /* ZJStarLevelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJStarLevelView.h; sourceTree = "<group>"; };
+		385C024D1CAD15FC00BD35A5 /* ZJStarLevelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJStarLevelView.m; sourceTree = "<group>"; };
+		385C02511CAD166900BD35A5 /* ZJFramework.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJFramework.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +188,10 @@
 			children = (
 				383F0BB91C5701D300B7CA6D /* AppDelegate.h */,
 				383F0BBA1C5701D300B7CA6D /* AppDelegate.m */,
+				385C023A1CAD157200BD35A5 /* ZJHeaderFile.h */,
+				385C02481CAD15FC00BD35A5 /* ZJPointImageView */,
+				385C024B1CAD15FC00BD35A5 /* ZJStarLevelView */,
+				385C023B1CAD15BF00BD35A5 /* ZJButton */,
 				385B85671C9A551800970191 /* VC */,
 				385B85781C9A7E0D00970191 /* Category */,
 				385B85711C9A558A00970191 /* ZJLoginManager */,
@@ -175,7 +199,7 @@
 				383F0BEF1C57031000B7CA6D /* ZJFooterView */,
 				383F0BF21C57031000B7CA6D /* ZJKnobControl */,
 				383F0BF91C57031000B7CA6D /* ZJPickerView */,
-				383F0C1A1C57165200B7CA6D /* ZJScrollView */,
+				385C02281CAD133B00BD35A5 /* ZJScrollView */,
 				383F0BFF1C57031000B7CA6D /* ZJSearchingView */,
 				383F0C211C5750CD00B7CA6D /* ZJCoreBluetooth */,
 				385335831C7AB6850033F77B /* ZJNaviScrollView */,
@@ -192,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				383F0BB71C5701D300B7CA6D /* main.m */,
+				385C02511CAD166900BD35A5 /* ZJFramework.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -265,16 +290,6 @@
 			path = ZJSearchingView;
 			sourceTree = "<group>";
 		};
-		383F0C1A1C57165200B7CA6D /* ZJScrollView */ = {
-			isa = PBXGroup;
-			children = (
-				383F0C1B1C57165200B7CA6D /* ZJScrollView.h */,
-				383F0C1C1C57165200B7CA6D /* ZJScrollView.m */,
-			);
-			name = ZJScrollView;
-			path = ZJPickerView/ZJScrollView;
-			sourceTree = "<group>";
-		};
 		383F0C211C5750CD00B7CA6D /* ZJCoreBluetooth */ = {
 			isa = PBXGroup;
 			children = (
@@ -341,6 +356,48 @@
 				385B857C1C9A7E0D00970191 /* ZJCategory.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		385C02281CAD133B00BD35A5 /* ZJScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				385C02291CAD133B00BD35A5 /* ZJScrollView.h */,
+				385C022A1CAD133B00BD35A5 /* ZJScrollView.m */,
+			);
+			path = ZJScrollView;
+			sourceTree = "<group>";
+		};
+		385C023B1CAD15BF00BD35A5 /* ZJButton */ = {
+			isa = PBXGroup;
+			children = (
+				385C023C1CAD15BF00BD35A5 /* ZJEventButton.h */,
+				385C023D1CAD15BF00BD35A5 /* ZJEventButton.m */,
+				385C023E1CAD15BF00BD35A5 /* ZJImageTextButton.h */,
+				385C023F1CAD15BF00BD35A5 /* ZJImageTextButton.m */,
+				385C02401CAD15BF00BD35A5 /* ZJSexButton.h */,
+				385C02411CAD15BF00BD35A5 /* ZJSexButton.m */,
+				385C02421CAD15BF00BD35A5 /* ZJStatusButton.h */,
+				385C02431CAD15BF00BD35A5 /* ZJStatusButton.m */,
+			);
+			path = ZJButton;
+			sourceTree = "<group>";
+		};
+		385C02481CAD15FC00BD35A5 /* ZJPointImageView */ = {
+			isa = PBXGroup;
+			children = (
+				385C02491CAD15FC00BD35A5 /* ZJPointImageView.h */,
+				385C024A1CAD15FC00BD35A5 /* ZJPointImageView.m */,
+			);
+			path = ZJPointImageView;
+			sourceTree = "<group>";
+		};
+		385C024B1CAD15FC00BD35A5 /* ZJStarLevelView */ = {
+			isa = PBXGroup;
+			children = (
+				385C024C1CAD15FC00BD35A5 /* ZJStarLevelView.h */,
+				385C024D1CAD15FC00BD35A5 /* ZJStarLevelView.m */,
+			);
+			path = ZJStarLevelView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -477,16 +534,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				383F0C091C57031000B7CA6D /* ZJPickerView.m in Sources */,
+				385C02441CAD15BF00BD35A5 /* ZJEventButton.m in Sources */,
 				383F0C271C57528A00B7CA6D /* ZJBLEDeviceManager.m in Sources */,
-				383F0C1D1C57165200B7CA6D /* ZJScrollView.m in Sources */,
+				385C02471CAD15BF00BD35A5 /* ZJStatusButton.m in Sources */,
 				383F0C041C57031000B7CA6D /* ZJDatePicker.m in Sources */,
 				3853359A1C7B085A0033F77B /* ZJNaviDetailView.m in Sources */,
 				383F0BBB1C5701D300B7CA6D /* AppDelegate.m in Sources */,
 				383F0C051C57031000B7CA6D /* ZJFooterView.m in Sources */,
 				385B857E1C9A7E0D00970191 /* ZJCategory.m in Sources */,
+				385C024E1CAD15FC00BD35A5 /* ZJPointImageView.m in Sources */,
+				385C02451CAD15BF00BD35A5 /* ZJImageTextButton.m in Sources */,
 				383F0C081C57031000B7CA6D /* RWRotationGestureRecognizer.m in Sources */,
 				383F0C071C57031000B7CA6D /* RWKnobRender.m in Sources */,
 				383F0C241C57515B00B7CA6D /* ZJBLEDevice.m in Sources */,
+				385C02461CAD15BF00BD35A5 /* ZJSexButton.m in Sources */,
+				385C024F1CAD15FC00BD35A5 /* ZJStarLevelView.m in Sources */,
 				383F0C0B1C57031000B7CA6D /* ZJSearchingContentsLayer.m in Sources */,
 				385335971C7AF85E0033F77B /* ZJNaviScrollButton.m in Sources */,
 				383F0BC41C5701D300B7CA6D /* ZJFramework.xcdatamodeld in Sources */,
@@ -500,6 +562,7 @@
 				385B857D1C9A7E0D00970191 /* UIViewExt.m in Sources */,
 				385335921C7AE32D0033F77B /* ZJNaviScrollCollectionViewCell.m in Sources */,
 				383F0C061C57031000B7CA6D /* RWKnobControl.m in Sources */,
+				385C022B1CAD133B00BD35A5 /* ZJScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,6 +706,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZJFramework/ZJFramework.pch";
 				INFOPLIST_FILE = ZJFramework/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hanyouapp.com.ZJFramework;
@@ -657,6 +722,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZJFramework/ZJFramework.pch";
 				INFOPLIST_FILE = ZJFramework/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hanyouapp.com.ZJFramework;

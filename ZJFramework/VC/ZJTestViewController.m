@@ -7,15 +7,7 @@
 //
 
 #import "ZJTestViewController.h"
-#import "ZJPickerView.h"
-#import "ZJDatePicker.h"
-#import "ZJFooterView.h"
-
-#import "ZJScrollView.h"
-
-#import "ZJSearchingView.h"
-
-#import "ZJNaviScrollView.h"
+#import "ZJHeaderFile.h"
 
 @interface ZJTestViewController ()<ZJPickerViewDataSource, ZJPickerViewDelegate, ZJScrollViewDelegate, ZJNaviScrollViewDelegate> {
     NSArray *_frameworkTitles;

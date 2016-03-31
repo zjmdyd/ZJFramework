@@ -49,6 +49,7 @@
     if (self) {
         _datePickerMode = mode;
         [superView addSubview:self];
+        [superView bringSubviewToFront:self];
         [self initSetting];
     }
     
@@ -175,7 +176,7 @@
     }
 }
 
-- (void)setHidden:(BOOL)hidden comletion:(completionHandle)comletion {
+- (void)setHidden:(BOOL)hidden completion:(completionHandle)comletion {
     self.hidden = hidden;
     
     if (comletion) {
@@ -187,14 +188,14 @@
 
 - (void)showWithMentionText:(NSString *)text {
     __block ZJDatePicker *picker = self;
-    [self setHidden:NO comletion:^(BOOL finish) {
+    [self setHidden:NO completion:^(BOOL finish) {
         picker.mentionLabel.text = text;
     }];
 }
 
 - (void)showWithMentionText:(NSString *)text completion:(completionHandle)completion {
     __block ZJDatePicker *picker = self;
-    [self setHidden:NO comletion:^(BOOL finish) {
+    [self setHidden:NO completion:^(BOOL finish) {
         picker.mentionLabel.text = text;
         completion(YES);
     }];
@@ -224,7 +225,7 @@
 }
 
 /**
- *  默认为datePicker的值;
+ *  当date未赋初始值时,date = nil;
  */
 - (NSDate *)date {
     _date = self.datePicker.date;
