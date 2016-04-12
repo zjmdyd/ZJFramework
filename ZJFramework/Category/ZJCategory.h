@@ -64,6 +64,7 @@
  */
 - (NSString *)changeToStringWithSeparator:(NSString *)separator;
 - (BOOL)containNumberObject:(NSNumber *)obj;
+- (NSArray *)multidimensionalArrayMutableCopy;
 
 @end
 

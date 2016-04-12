@@ -120,6 +120,20 @@
     return str;
 }
 
+- (NSArray *)multidimensionalArrayMutableCopy {
+    NSMutableArray *array = [NSMutableArray array];
+    
+    for (id obj in self) {
+        if ([obj isKindOfClass:[NSArray class]]) {
+            [array addObject:[obj multidimensionalArrayMutableCopy]];
+        }else {
+            [array addObject:obj];
+        }
+    }
+    
+    return array;
+}
+
 - (BOOL)containNumberObject:(NSNumber *)obj {
     for (NSNumber *num in self) {
         if ([obj isEqualToNumber:num]) {
