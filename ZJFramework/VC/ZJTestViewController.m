@@ -31,7 +31,85 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self initSetting];
+    /**
+     *  相同的NSNumber对象在内存中的地址相同
+     */
+    NSArray *ary = @[@1, @2, @3];   // ary[1]  --> 0xb000000000000022
+    NSArray *ary2 = @[@1, @2, @3];  // ary2[1] --> 0xb000000000000022
+    NSLog(@"ary  = %p, %p", ary,  ary[1]);
+    NSLog(@"ary2 = %p, %p", ary2, ary2[1]);
+    
+    NSLog(@"\n");
+    
+    /**
+     *  相同的NSString对象在内存中的地址相同, 执行mutableCopy后地址会改变
+     */
+    ary = @[@"1", @"2", @"3"];
+    ary2 = @[@"1", @"2", @"3"];
+    NSLog(@"ary  = %p, %p", ary,  ary[1]);                  // 0x1003ade10
+    NSLog(@"ary2 = %p, %p", ary2, ary2[1]);                 // 0x1003ade10
+    NSLog(@"ary2 = %p, %p", ary2, [ary2[1] mutableCopy]);   // 0x7fa8f3492cb0
+    
+    NSLog(@"\n");
+    
+    for (id obj in ary) {
+        NSLog(@"obj = %p", obj);    // obj = 0x10a754df0, 0x10a754e10, 0x10a754e30
+    }
+    
+    NSLog(@"\n");
+    NSLog(@"*************************");
+    
+    NSArray *ary3 = [ary mutableCopy];
+    NSLog(@"ary3 = %@, %p", ary3, ary3);
+    [self printAry:ary3];           // 数组元素不会改变地址
+    
+    NSLog(@"\n");
+    ary3 = [ary multidimensionalArrayMutableCopy];
+    NSLog(@"ary3 = %@, %p", ary3, ary3);
+    [self printAry:ary3];       // 数组元素会改变地址
+    
+    NSLog(@"*************************");
+    
+    ary3 = @[
+             @[@"1"],
+             @[@"2"],
+             @[@"3"],
+             ];
+    [self printAry:ary3];       //
+    
+    NSArray *ary4 = [ary3 multidimensionalArrayMutableCopy];
+    NSLog(@"ary4 = %@", ary4);
+    [self printAry:ary4];       //
+    
+    NSLog(@"*********** ary5 **************");
+    NSArray *ary5 = @[
+                      @[
+                          @[@"11"]
+                          ],
+                      @[
+                          @[@"22"]
+                          ],
+                      @[
+                          @[@"33"]
+                          ]
+                      ];
+    [self printAry:ary5];
+    
+    NSArray *ary6 = [ary5 multidimensionalArrayMutableCopy];
+    [self printAry:ary6];       //
+}
+
+- (void)printAry:(NSArray *)ary {
+    for (int i = 0; i < ary.count; i++) {
+        if ([ary[i] isKindOfClass:[NSArray class]]) {
+            NSLog(@"obj = %p, %@", ary[i], ary[i]);
+            [self printAry:ary[i]];
+        }else {
+            NSLog(@"obj = %p, %@", ary[i], ary[i]);
+        }
+    }
+    
+    NSLog(@"\n");
 }
 
 - (void)initSetting {
@@ -87,7 +165,7 @@
 }
 
 - (void)test3 {
-
+    
 }
 
 - (void)test4 {
@@ -125,10 +203,10 @@
     NSLog(@"index = %zd", buttongIndex);
     if (buttongIndex == 1) {
         zjScrollView.imageNames = @[@"3", @"2", @"1"];
-//        zjScrollView.bottomTitles = @[@"呵呵呵呵", @"哈哈哈"];
-//        zjScrollView.cycleScrolledEnable = !zjScrollView.isCycleScrolledEnable;
+        //        zjScrollView.bottomTitles = @[@"呵呵呵呵", @"哈哈哈"];
+        //        zjScrollView.cycleScrolledEnable = !zjScrollView.isCycleScrolledEnable;
         
-//        [self performSelector:@selector(func:) withObject:zjScrollView afterDelay:5.0];
+        //        [self performSelector:@selector(func:) withObject:zjScrollView afterDelay:5.0];
     }
 }
 
@@ -159,13 +237,13 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

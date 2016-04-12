@@ -22,6 +22,7 @@
 #import "ZJStarLevelView.h"
 
 #import "ZJScrollView.h"
+#import "ZJNaviScrollView.h"
 #import "ZJSearchingView.h"
 
 #define KeyWindow [UIApplication sharedApplication].keyWindow
