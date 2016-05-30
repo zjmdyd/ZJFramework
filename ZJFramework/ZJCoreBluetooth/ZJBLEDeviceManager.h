@@ -11,7 +11,7 @@
 /**
  *  回调方法里面主要执行刷新界面的代码
  */
-typedef void(^completionHandle)(id obj);
+typedef void(^BleCompletionHandle)(id obj);
 
 @interface ZJBLEDeviceManager : NSObject
 
@@ -38,14 +38,14 @@ typedef void(^completionHandle)(id obj);
 /**
  *  更新centralManager状态, 在回调方法里面对不同的状态进行处理
  */
-+ (instancetype)shareManagerDidUpdateStateHandle:(completionHandle)completion;
++ (instancetype)shareManagerDidUpdateStateHandle:(BleCompletionHandle)completion;
 
 /**
  *  **
  *  @param uuids      搜索包含服务特定服务uuid的设备
  *  @param completion 搜索结果返回的回调方法
  */
-- (void)scanDeviceWithServiceUUIDs:(NSArray *)uuids completion:(completionHandle)completion;
+- (void)scanDeviceWithServiceUUIDs:(NSArray *)uuids completion:(BleCompletionHandle)completion;
 
 /**
  *  连接设备
@@ -53,7 +53,7 @@ typedef void(^completionHandle)(id obj);
  *  @param devices    需要连接的设备, 数组的元素是ZJBLEDevice对象类型
  *  @param completion 连接成功后的回调,@{@"device" : device(ZJBLEDevice类型), @"error" : error},
  */
-- (void)connectBLEDevices:(NSArray *)devices completion:(completionHandle)completion;
+- (void)connectBLEDevices:(NSArray *)devices completion:(BleCompletionHandle)completion;
 
 /**
  *  手动断开连接
@@ -61,7 +61,7 @@ typedef void(^completionHandle)(id obj);
  *  @param devices    需要断开的设备, 数组的元素是ZJBLEDevice对象类型
  *  @param completion 断开连接后的回调,@{@"device" : device(ZJBLEDevice类型), @"error" : error}
  */
-- (void)cancelBLEDevicesConnection:(NSArray *)devices completion:(completionHandle)completion;
+- (void)cancelBLEDevicesConnection:(NSArray *)devices completion:(BleCompletionHandle)completion;
 
 /**
  *  停止扫描

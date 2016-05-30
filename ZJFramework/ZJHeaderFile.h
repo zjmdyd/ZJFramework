@@ -9,11 +9,11 @@
 #ifndef ZJHeaderFile_h
 #define ZJHeaderFile_h
 
+#import "UIViewExt.h"
 #import "ZJFooterView.h"
 #import "ZJCategory.h"
 #import "ZJDatePicker.h"
 #import "ZJPickerView.h"
-
 #import "ZJStatusButton.h"
 #import "ZJEventButton.h"
 #import "ZJImageTextButton.h"

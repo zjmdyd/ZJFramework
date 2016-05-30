@@ -10,7 +10,7 @@
 
 @interface ZJBLEDevice () <CBPeripheralDelegate>
 
-@property (nonatomic, strong) completionHandle writeValueCompletion;
+@property (nonatomic, strong) DeviceCompletionHandle writeValueCompletion;
 
 @end
 
@@ -31,7 +31,7 @@
     [self.peripheral discoverServices:nil];
 }
 
-- (void)writeValue:(NSData *)data forCharacteristic:(CBCharacteristic *)characteristic type:(CBCharacteristicWriteType)type completion:(completionHandle)completion {
+- (void)writeValue:(NSData *)data forCharacteristic:(CBCharacteristic *)characteristic type:(CBCharacteristicWriteType)type completion:(DeviceCompletionHandle)completion {
     self.writeValueCompletion = completion;
     [self.peripheral writeValue:data forCharacteristic:characteristic type:type];
 }

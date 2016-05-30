@@ -8,16 +8,42 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "UIViewExt.h"
-
-#define kScreenW        ([UIScreen mainScreen].bounds.size.width)
-#define kScreenH        ([UIScreen mainScreen].bounds.size.height)
 
 @interface ZJCategory : NSObject
 
 @end
 
+#pragma mark - ********************   NSObject  ********************
+
+@interface NSObject (ZJObject)
+
+- (id)nextResponderWithResponder:(id)responder objectClass:(NSString *)className;
+- (void)setupQRCodeForImageView:(UIImageView *)imageView content:(NSString *)content;
+
+@end
+
 #pragma mark - ********************   UIView  ********************
+
+@interface UIView (ZJUIView)
+
++ (UIView *)maskViewWithFrame:(CGRect)frame;
+
+/**
+ *  @param color 默认为lightGrayColor
+ *  @param font  默认为系统字体15
+ */
+- (UIView *)headerViewWithText:(NSString *)text textColor:(UIColor *)color font:(UIFont *)font;
+
+/**
+ *  footerView
+ *  @param color 默认为lightGrayColor
+ *  @param font  默认为系统字体16
+ */
+- (UIView *)footerViewWithText:(NSString *)text textColor:(UIColor *)color font:(UIFont *)font;
+
+- (UIColor *)systemTableViewBgColor;
+
+@end
 
 @interface UILabel (ZJLabel)
 
@@ -25,7 +51,23 @@
  *  根据文本内容适配Label高度
  */
 - (CGSize)fitSizeWithWidth:(CGFloat)width;
-+ (CGSize)fitSizeWithText:(NSString *)text font:(UIFont *)font textColor:(UIColor *)color marginX:(CGFloat)margin;
+
+/**
+ *  根据文本获取合适高度
+ *  @param font   默认为系统16号字体
+ *  @param margin 默认为8
+ */
++ (CGSize)fitSizeWithText:(NSString *)text font:(UIFont *)font marginX:(CGFloat)margin;
+
+/**
+ *  获取适合的font
+ *
+ *  @param pSize  pointSize
+ *  @param width  label的宽度
+ *  @param height label的高度, 不直接用label.width和label.height是因为约束
+ */
+
+- (UIFont *)fitFontWithPointSize:(CGFloat)pSize width:(CGFloat)width height:(CGFloat)height;
 
 @end
 
@@ -39,14 +81,51 @@
 - (void)registerCellWithIDs:(NSArray *)cellIDs nibCount:(NSInteger)nibCount;
 
 /**
- *  @param color 默认为lightGrayColor
- *  @param font  默认为系统字体15
+ *  记得要在VC中添加对应方法
  */
-- (UIView *)createHeaderLabelWithText:(NSString *)text textColor:(UIColor *)color font:(UIFont *)font;
+- (UISwitch *)accessorySwitchView;
+
+- (void)setNeedMargin:(BOOL)needMargin;
+
+@end
+
+@interface UIColor (ZJColor)
+
++ (UIColor *)systemTableViewBgColor;
++ (UIColor *)maskViewColor;
++ (UIColor *)pinkColor;
+
+@end
+
+@interface UIImage (ZJImage)
+
++ (UIImage *)imageWithColor:(UIColor *)color;
++ (UIImage *)imageWithColor:(UIColor *)color withFrame:(CGRect)rect;
+
+@end
+
+@interface UIBarButtonItem (ZJBarButtonItem)
+
++ (UIBarButtonItem *)barbuttonWithCustomView:(UIView *)view;
 
 @end
 
 #pragma mark - ********************   Foundation  ********************
+
+@interface NSNumber (ZJNumber)
+/**
+ *  @1 ---> 周一
+ */
+- (NSString *)weekdayToChinese;
+
+/**
+ *  格林威治时间星期
+ *  @1 --> 周日
+ *  @2 --> 周一
+ */
+- (NSString *)gregorianWeekdayToChinese;
+
+@end
 
 @interface NSString (ZJString)
 
@@ -56,6 +135,25 @@
  *  @param string 指定字符串
  */
 - (NSMutableAttributedString *)attributedStringWithMatchString:(NSString *)string attribute:(NSDictionary *)attribute;
+
+/**
+ *  得到一个小时时间区域字符串
+ *
+ *  @return eg: 8:00 ---> 08:00-09:00
+ */
+- (NSString *)timeHourRegioString;
+
+/**
+ *  字符串填充0
+ *
+ *  @return eg: 8 ---> 08
+ */
+- (NSString *)fillZeroString;
+
+/**
+ *  @"8" --> 08:00
+ */
+- (NSString *)fillZeroTimeString;
 
 @end
 
@@ -67,8 +165,13 @@
  *  @param separator 间隔符
  */
 - (NSString *)changeToStringWithSeparator:(NSString *)separator;
-- (BOOL)containNumberObject:(NSNumber *)obj;
+
+/**
+ *  多维数组的mutableCopy
+ */
 - (NSArray *)multidimensionalArrayMutableCopy;
+
+- (BOOL)containNumberObject:(NSNumber *)obj;
 
 @end
 
@@ -78,6 +181,10 @@
  *  向子数组中添加元素
  */
 - (void)addObject:(id)obj toSubAry:(NSMutableArray *)subAry;
+
+- (void)replaceDicInfosAtIndex:(NSIndexPath *)indexPath value:(NSString *)value;
+
++ (NSMutableArray *)arrayWithInitObjectWithCount:(NSInteger)count;
 
 @end
 
@@ -125,10 +232,28 @@
 @interface UIViewController (ZJViewController)
 
 /**
+ *  手势
+ */
+- (void)addTapGestureWithDelegate:(id <UIGestureRecognizerDelegate>)delegate;
+
+/**
+ *  创建系统barButtonItem
+ */
+- (UIBarButtonItem *)barbuttonWithSystemType:(UIBarButtonSystemItem)type;
+- (UIBarButtonItem *)barbuttonWithTitle:(NSString *)type;
+- (UIBarButtonItem *)barbuttonWithImageName:(NSString *)imgName;
+- (NSArray *)barbuttonWithImageNames:(NSArray *)imgNames;
+// 适应于两个
+- (UIBarButtonItem *)barbuttonWithCustomViewWithImageNames:(NSArray *)images;
+
+/**
  *  @param view 默认为self.viw
  */
 - (void)showMentionViewWithImgName:(NSString *)name text:(NSString *)text superView:(UIView *)view;
 - (void)showMentionViewWithImgName:(NSString *)name text:(NSString *)text animated:(BOOL)animated;
 - (void)hiddenMentionView:(BOOL)hidden animated:(BOOL)animated;
+- (UIView *)mentionViewWithImgName:(NSString *)name text:(NSString *)text frame:(CGRect)frame;
+
+- (void)removeNotificationObserver;
 
 @end

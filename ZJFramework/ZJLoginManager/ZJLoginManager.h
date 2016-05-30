@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void(^completionHandle)(id obj);
+//typedef void(^completionHandle)(id obj);
 
 @interface ZJLoginManager : NSObject
 

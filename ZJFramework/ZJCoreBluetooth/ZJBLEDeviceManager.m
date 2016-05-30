@@ -13,10 +13,10 @@
 @interface ZJBLEDeviceManager ()<CBCentralManagerDelegate>
 
 @property (nonatomic, strong) CBCentralManager *centralManager;
-@property (nonatomic, strong) completionHandle scanCompletion;
-@property (nonatomic, strong) completionHandle stateCompletion;
-@property (nonatomic, strong) completionHandle connectCompletion;
-@property (nonatomic, strong) completionHandle disConnectCompletion;
+@property (nonatomic, strong) BleCompletionHandle scanCompletion;
+@property (nonatomic, strong) BleCompletionHandle stateCompletion;
+@property (nonatomic, strong) BleCompletionHandle connectCompletion;
+@property (nonatomic, strong) BleCompletionHandle disConnectCompletion;
 
 @end
 
@@ -48,14 +48,14 @@ static ZJBLEDeviceManager *_manager = nil;
     return _manager;
 }
 
-+ (instancetype)shareManagerDidUpdateStateHandle:(completionHandle)completion {
++ (instancetype)shareManagerDidUpdateStateHandle:(BleCompletionHandle)completion {
     _manager = [ZJBLEDeviceManager shareManager];
     _manager.stateCompletion = completion;
     
     return _manager;
 }
 
-- (void)scanDeviceWithServiceUUIDs:(NSArray *)uuids completion:(completionHandle)completion {
+- (void)scanDeviceWithServiceUUIDs:(NSArray *)uuids completion:(BleCompletionHandle)completion {
     self.automScan = YES;
     [self.centralManager scanForPeripheralsWithServices:uuids options:nil];
     /**
@@ -66,7 +66,7 @@ static ZJBLEDeviceManager *_manager = nil;
     }
 }
 
-- (void)connectBLEDevices:(NSArray *)devices completion:(completionHandle)completion {
+- (void)connectBLEDevices:(NSArray *)devices completion:(BleCompletionHandle)completion {
     for (ZJBLEDevice *device in devices) {
         if (device.peripheral.state == CBPeripheralStateDisconnected) {
             [self.centralManager connectPeripheral:device.peripheral options:nil];
@@ -75,7 +75,7 @@ static ZJBLEDeviceManager *_manager = nil;
     self.connectCompletion = completion;
 }
 
-- (void)cancelBLEDevicesConnection:(NSArray *)devices completion:(completionHandle)completion {
+- (void)cancelBLEDevicesConnection:(NSArray *)devices completion:(BleCompletionHandle)completion {
     for (ZJBLEDevice *device in devices) {
         [self.centralManager cancelPeripheralConnection:device.peripheral];
     }
