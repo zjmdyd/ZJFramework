@@ -9,8 +9,8 @@
 #import "ViewController.h"
 #import "ZJTestViewController.h"
 #import "ZJBLETableViewController.h"
+#import "ZJPhotoViewController.h"
 
-#import "ZJCategory.h"
 
 @interface ViewController ()<UITableViewDataSource, UITableViewDelegate> {
     NSArray *_frameworkTitles;
@@ -42,13 +42,13 @@ static NSString *CellID = @"cell";
                     @"ZJScrollView",
                     @"ZJSearchingView",
                     @"ZJNaviScrollView",
+                    @"ZJPhotoViewController"
                     ];
     NSArray *s2 = @[
                     @"ZJBLEDeviceManager",
                     ];
     
     _frameworkTitles = @[s1, s2];
-//    [self showMentionViewWithImgName:@"ic_user_96x96" text:@"暂无人头" superView:nil];
 }
 
 #pragma mark - UITableViewDataSource
@@ -78,7 +78,12 @@ static NSString *CellID = @"cell";
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     if (indexPath.section == 0) {
-        [self performSegueWithIdentifier:@"testVC" sender:indexPath];
+        if (indexPath.row == [_frameworkTitles[indexPath.section] count] - 1) {
+            ZJPhotoViewController *vc = [[ZJPhotoViewController alloc] initWithNibName:@"ZJPhotoViewController" bundle:nil];
+            [self.navigationController pushViewController:vc animated:YES];
+        }else {
+            [self performSegueWithIdentifier:@"testVC" sender:indexPath];
+        }
     }else {
         [self performSegueWithIdentifier:@"testBLE" sender:indexPath];
     }

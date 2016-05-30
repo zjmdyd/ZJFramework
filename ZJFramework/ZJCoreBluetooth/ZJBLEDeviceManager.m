@@ -127,19 +127,19 @@ static ZJBLEDeviceManager *_manager = nil;
  *  已连接
  */
 - (void)centralManager:(CBCentralManager *)central didConnectPeripheral:(CBPeripheral *)peripheral {
-    NSMutableArray *ary = [NSMutableArray arrayWithArray:self.discoveredBLEDevices];
+    NSMutableArray *discoverAry = [NSMutableArray arrayWithArray:self.discoveredBLEDevices];
     NSMutableArray *connAry = [NSMutableArray arrayWithArray:self.connectedBLEDevices];
     
     ZJBLEDevice *device;
-    for (int i = 0; i < ary.count; i++) {
-        device = ary[i];
+    for (int i = 0; i < discoverAry.count; i++) {
+        device = discoverAry[i];
         if ([device.peripheral.identifier.UUIDString isEqualToString:peripheral.identifier.UUIDString]) {
             [connAry addObject:device];
-            [ary removeObject:device];
+            [discoverAry removeObject:device];
             break;
         }
     }
-    _discoveredBLEDevices = [ary copy];
+    _discoveredBLEDevices = [discoverAry copy];
     _connectedBLEDevices = [connAry copy];
     self.connectCompletion(device);
 }

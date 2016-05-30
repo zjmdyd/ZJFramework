@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "UIViewExt.h"
+
+#define kScreenW        ([UIScreen mainScreen].bounds.size.width)
+#define kScreenH        ([UIScreen mainScreen].bounds.size.height)
 
 @interface ZJCategory : NSObject
 

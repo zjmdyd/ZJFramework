@@ -25,6 +25,9 @@
 		383F0C0C1C57031000B7CA6D /* ZJSearchingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 383F0C031C57031000B7CA6D /* ZJSearchingView.m */; };
 		383F0C241C57515B00B7CA6D /* ZJBLEDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 383F0C231C57515B00B7CA6D /* ZJBLEDevice.m */; };
 		383F0C271C57528A00B7CA6D /* ZJBLEDeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 383F0C261C57528A00B7CA6D /* ZJBLEDeviceManager.m */; };
+		3847881D1CBCCA5E0042EB22 /* ZJPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3847881B1CBCCA5E0042EB22 /* ZJPhotoViewController.m */; };
+		3847881E1CBCCA5E0042EB22 /* ZJPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3847881C1CBCCA5E0042EB22 /* ZJPhotoViewController.xib */; };
+		384788231CBCFACA0042EB22 /* ZJAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 384788221CBCFACA0042EB22 /* ZJAsset.m */; };
 		385335861C7AB6B40033F77B /* ZJNaviScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 385335851C7AB6B40033F77B /* ZJNaviScrollView.m */; };
 		385335921C7AE32D0033F77B /* ZJNaviScrollCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3853358E1C7AE32D0033F77B /* ZJNaviScrollCollectionViewCell.m */; };
 		385335931C7AE32D0033F77B /* ZJNaviScrollCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3853358F1C7AE32D0033F77B /* ZJNaviScrollCollectionViewCell.xib */; };
@@ -43,6 +46,12 @@
 		385C02471CAD15BF00BD35A5 /* ZJStatusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 385C02431CAD15BF00BD35A5 /* ZJStatusButton.m */; };
 		385C024E1CAD15FC00BD35A5 /* ZJPointImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 385C024A1CAD15FC00BD35A5 /* ZJPointImageView.m */; };
 		385C024F1CAD15FC00BD35A5 /* ZJStarLevelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 385C024D1CAD15FC00BD35A5 /* ZJStarLevelView.m */; };
+		386C52E71CBDE75D0014B47A /* ZJPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 386C52E51CBDE75D0014B47A /* ZJPhotoCollectionViewCell.m */; };
+		386C52E81CBDE75D0014B47A /* ZJPhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 386C52E61CBDE75D0014B47A /* ZJPhotoCollectionViewCell.xib */; };
+		386C52F11CBDEB960014B47A /* ZJPhotoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 386C52EF1CBDEB960014B47A /* ZJPhotoCollectionViewController.m */; };
+		386C52F21CBDEB960014B47A /* ZJPhotoCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 386C52F01CBDEB960014B47A /* ZJPhotoCollectionViewController.xib */; };
+		386C52F61CBDF5920014B47A /* ZJPhotoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 386C52F41CBDF5920014B47A /* ZJPhotoDetailViewController.m */; };
+		386C52F71CBDF5920014B47A /* ZJPhotoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 386C52F51CBDF5920014B47A /* ZJPhotoDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +107,13 @@
 		383F0C231C57515B00B7CA6D /* ZJBLEDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJBLEDevice.m; sourceTree = "<group>"; };
 		383F0C251C57528A00B7CA6D /* ZJBLEDeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJBLEDeviceManager.h; sourceTree = "<group>"; };
 		383F0C261C57528A00B7CA6D /* ZJBLEDeviceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJBLEDeviceManager.m; sourceTree = "<group>"; };
+		3847881A1CBCCA5E0042EB22 /* ZJPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJPhotoViewController.h; sourceTree = "<group>"; };
+		3847881B1CBCCA5E0042EB22 /* ZJPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJPhotoViewController.m; sourceTree = "<group>"; };
+		3847881C1CBCCA5E0042EB22 /* ZJPhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZJPhotoViewController.xib; sourceTree = "<group>"; };
+		3847881F1CBCD3170042EB22 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		384788201CBCD3170042EB22 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		384788211CBCFACA0042EB22 /* ZJAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJAsset.h; sourceTree = "<group>"; };
+		384788221CBCFACA0042EB22 /* ZJAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJAsset.m; sourceTree = "<group>"; };
 		385335841C7AB6B40033F77B /* ZJNaviScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJNaviScrollView.h; sourceTree = "<group>"; };
 		385335851C7AB6B40033F77B /* ZJNaviScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJNaviScrollView.m; sourceTree = "<group>"; };
 		3853358D1C7AE32D0033F77B /* ZJNaviScrollCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJNaviScrollCollectionViewCell.h; sourceTree = "<group>"; };
@@ -135,6 +151,15 @@
 		385C024C1CAD15FC00BD35A5 /* ZJStarLevelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJStarLevelView.h; sourceTree = "<group>"; };
 		385C024D1CAD15FC00BD35A5 /* ZJStarLevelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJStarLevelView.m; sourceTree = "<group>"; };
 		385C02511CAD166900BD35A5 /* ZJFramework.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJFramework.pch; sourceTree = "<group>"; };
+		386C52E41CBDE75D0014B47A /* ZJPhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJPhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		386C52E51CBDE75D0014B47A /* ZJPhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJPhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		386C52E61CBDE75D0014B47A /* ZJPhotoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZJPhotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		386C52EE1CBDEB960014B47A /* ZJPhotoCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJPhotoCollectionViewController.h; sourceTree = "<group>"; };
+		386C52EF1CBDEB960014B47A /* ZJPhotoCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJPhotoCollectionViewController.m; sourceTree = "<group>"; };
+		386C52F01CBDEB960014B47A /* ZJPhotoCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZJPhotoCollectionViewController.xib; sourceTree = "<group>"; };
+		386C52F31CBDF5920014B47A /* ZJPhotoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJPhotoDetailViewController.h; sourceTree = "<group>"; };
+		386C52F41CBDF5920014B47A /* ZJPhotoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJPhotoDetailViewController.m; sourceTree = "<group>"; };
+		386C52F51CBDF5920014B47A /* ZJPhotoDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZJPhotoDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,10 +214,11 @@
 				383F0BB91C5701D300B7CA6D /* AppDelegate.h */,
 				383F0BBA1C5701D300B7CA6D /* AppDelegate.m */,
 				385C023A1CAD157200BD35A5 /* ZJHeaderFile.h */,
+				385B85671C9A551800970191 /* VC */,
+				384788141CBCC6B10042EB22 /* ZJPhoto */,
 				385C02481CAD15FC00BD35A5 /* ZJPointImageView */,
 				385C024B1CAD15FC00BD35A5 /* ZJStarLevelView */,
 				385C023B1CAD15BF00BD35A5 /* ZJButton */,
-				385B85671C9A551800970191 /* VC */,
 				385B85781C9A7E0D00970191 /* Category */,
 				385B85711C9A558A00970191 /* ZJLoginManager */,
 				383F0BEC1C57031000B7CA6D /* ZJDatePicker */,
@@ -299,6 +325,27 @@
 				383F0C261C57528A00B7CA6D /* ZJBLEDeviceManager.m */,
 			);
 			path = ZJCoreBluetooth;
+			sourceTree = "<group>";
+		};
+		384788141CBCC6B10042EB22 /* ZJPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				3847881A1CBCCA5E0042EB22 /* ZJPhotoViewController.h */,
+				3847881B1CBCCA5E0042EB22 /* ZJPhotoViewController.m */,
+				386C52EE1CBDEB960014B47A /* ZJPhotoCollectionViewController.h */,
+				386C52EF1CBDEB960014B47A /* ZJPhotoCollectionViewController.m */,
+				386C52F01CBDEB960014B47A /* ZJPhotoCollectionViewController.xib */,
+				386C52F31CBDF5920014B47A /* ZJPhotoDetailViewController.h */,
+				386C52F41CBDF5920014B47A /* ZJPhotoDetailViewController.m */,
+				386C52F51CBDF5920014B47A /* ZJPhotoDetailViewController.xib */,
+				386C52E41CBDE75D0014B47A /* ZJPhotoCollectionViewCell.h */,
+				386C52E51CBDE75D0014B47A /* ZJPhotoCollectionViewCell.m */,
+				386C52E61CBDE75D0014B47A /* ZJPhotoCollectionViewCell.xib */,
+				384788211CBCFACA0042EB22 /* ZJAsset.h */,
+				384788221CBCFACA0042EB22 /* ZJAsset.m */,
+				3847881C1CBCCA5E0042EB22 /* ZJPhotoViewController.xib */,
+			);
+			path = ZJPhoto;
 			sourceTree = "<group>";
 		};
 		385335831C7AB6850033F77B /* ZJNaviScrollView */ = {
@@ -505,9 +552,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				386C52F71CBDF5920014B47A /* ZJPhotoDetailViewController.xib in Resources */,
 				383F0BC91C5701D300B7CA6D /* LaunchScreen.storyboard in Resources */,
 				383F0BC61C5701D300B7CA6D /* Assets.xcassets in Resources */,
+				3847881E1CBCCA5E0042EB22 /* ZJPhotoViewController.xib in Resources */,
+				386C52E81CBDE75D0014B47A /* ZJPhotoCollectionViewCell.xib in Resources */,
 				383F0BC11C5701D300B7CA6D /* Main.storyboard in Resources */,
+				386C52F21CBDEB960014B47A /* ZJPhotoCollectionViewController.xib in Resources */,
 				385335931C7AE32D0033F77B /* ZJNaviScrollCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -537,10 +588,13 @@
 				385C02441CAD15BF00BD35A5 /* ZJEventButton.m in Sources */,
 				383F0C271C57528A00B7CA6D /* ZJBLEDeviceManager.m in Sources */,
 				385C02471CAD15BF00BD35A5 /* ZJStatusButton.m in Sources */,
+				386C52F61CBDF5920014B47A /* ZJPhotoDetailViewController.m in Sources */,
 				383F0C041C57031000B7CA6D /* ZJDatePicker.m in Sources */,
 				3853359A1C7B085A0033F77B /* ZJNaviDetailView.m in Sources */,
 				383F0BBB1C5701D300B7CA6D /* AppDelegate.m in Sources */,
 				383F0C051C57031000B7CA6D /* ZJFooterView.m in Sources */,
+				384788231CBCFACA0042EB22 /* ZJAsset.m in Sources */,
+				386C52F11CBDEB960014B47A /* ZJPhotoCollectionViewController.m in Sources */,
 				385B857E1C9A7E0D00970191 /* ZJCategory.m in Sources */,
 				385C024E1CAD15FC00BD35A5 /* ZJPointImageView.m in Sources */,
 				385C02451CAD15BF00BD35A5 /* ZJImageTextButton.m in Sources */,
@@ -548,6 +602,7 @@
 				383F0C071C57031000B7CA6D /* RWKnobRender.m in Sources */,
 				383F0C241C57515B00B7CA6D /* ZJBLEDevice.m in Sources */,
 				385C02461CAD15BF00BD35A5 /* ZJSexButton.m in Sources */,
+				3847881D1CBCCA5E0042EB22 /* ZJPhotoViewController.m in Sources */,
 				385C024F1CAD15FC00BD35A5 /* ZJStarLevelView.m in Sources */,
 				383F0C0B1C57031000B7CA6D /* ZJSearchingContentsLayer.m in Sources */,
 				385335971C7AF85E0033F77B /* ZJNaviScrollButton.m in Sources */,
@@ -563,6 +618,7 @@
 				385335921C7AE32D0033F77B /* ZJNaviScrollCollectionViewCell.m in Sources */,
 				383F0C061C57031000B7CA6D /* RWKnobControl.m in Sources */,
 				385C022B1CAD133B00BD35A5 /* ZJScrollView.m in Sources */,
+				386C52E71CBDE75D0014B47A /* ZJPhotoCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -602,6 +658,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				383F0BC01C5701D300B7CA6D /* Base */,
+				3847881F1CBCD3170042EB22 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			path = ZJFramework;
@@ -611,6 +668,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				383F0BC81C5701D300B7CA6D /* Base */,
+				384788201CBCD3170042EB22 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -709,8 +767,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ZJFramework/ZJFramework.pch";
 				INFOPLIST_FILE = ZJFramework/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hanyouapp.com.ZJFramework;
+				PRODUCT_BUNDLE_IDENTIFIER = net.hanyouapp.ZJFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -725,8 +784,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ZJFramework/ZJFramework.pch";
 				INFOPLIST_FILE = ZJFramework/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hanyouapp.com.ZJFramework;
+				PRODUCT_BUNDLE_IDENTIFIER = net.hanyouapp.ZJFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

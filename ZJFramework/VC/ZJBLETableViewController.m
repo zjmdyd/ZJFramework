@@ -30,17 +30,16 @@
     
     self.bleManager = [ZJBLEDeviceManager shareManagerDidUpdateStateHandle:^(id obj) {
         NSLog(@"state = %@", obj);
+        
     }];
     NSLog(@"manager = %@", self.bleManager);//manager = <ZJBLEDeviceManager: 0x15d36b50> manager = <ZJBLEDeviceManager: 0x15d36b50>
-    self.bleManager = [ZJBLEDeviceManager shareManager];
+//    self.bleManager = [ZJBLEDeviceManager shareManager];
     
     [self.bleManager scanDeviceWithServiceUUIDs:nil completion:^(id obj) {
         dispatch_async(dispatch_get_main_queue(), ^{
             [self.tableView reloadData];
         });
     }];
-    
-//    [self showMentionViewWithImgName:@"ic_user_96x96" text:@"暂无人头" superView:nil];
 }
 
 #pragma mark - Table view data source
