@@ -211,7 +211,7 @@
 }
 
 - (void)func:(ZJScrollView *)view {
-    view.cycleScrolledEnable = NO;
+    view.cycleScrolled = NO;
 }
 
 #pragma mark - ZJPickerViewDataSource

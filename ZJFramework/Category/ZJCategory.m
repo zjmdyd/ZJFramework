@@ -8,6 +8,7 @@
 
 #import "ZJCategory.h"
 #import "UIViewExt.h"
+#import <objc/runtime.h>
 
 #define kScreenW    ([UIScreen mainScreen].bounds.size.width)
 #define kScreenH    ([UIScreen mainScreen].bounds.size.height)

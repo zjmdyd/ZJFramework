@@ -52,6 +52,8 @@
 		386C52F21CBDEB960014B47A /* ZJPhotoCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 386C52F01CBDEB960014B47A /* ZJPhotoCollectionViewController.xib */; };
 		386C52F61CBDF5920014B47A /* ZJPhotoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 386C52F41CBDF5920014B47A /* ZJPhotoDetailViewController.m */; };
 		386C52F71CBDF5920014B47A /* ZJPhotoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 386C52F51CBDF5920014B47A /* ZJPhotoDetailViewController.xib */; };
+		38952C591D10F31300D668C4 /* ZJRotateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 38952C581D10F31300D668C4 /* ZJRotateView.m */; };
+		38F7EAD51D49F06D00E0A4A1 /* DribbbleAnimationPractice.zip in Resources */ = {isa = PBXBuildFile; fileRef = 38F7EAD41D49F06D00E0A4A1 /* DribbbleAnimationPractice.zip */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -160,6 +162,9 @@
 		386C52F31CBDF5920014B47A /* ZJPhotoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJPhotoDetailViewController.h; sourceTree = "<group>"; };
 		386C52F41CBDF5920014B47A /* ZJPhotoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJPhotoDetailViewController.m; sourceTree = "<group>"; };
 		386C52F51CBDF5920014B47A /* ZJPhotoDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZJPhotoDetailViewController.xib; sourceTree = "<group>"; };
+		38952C571D10F31300D668C4 /* ZJRotateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJRotateView.h; sourceTree = "<group>"; };
+		38952C581D10F31300D668C4 /* ZJRotateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJRotateView.m; sourceTree = "<group>"; };
+		38F7EAD41D49F06D00E0A4A1 /* DribbbleAnimationPractice.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = DribbbleAnimationPractice.zip; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +234,7 @@
 				383F0BFF1C57031000B7CA6D /* ZJSearchingView */,
 				383F0C211C5750CD00B7CA6D /* ZJCoreBluetooth */,
 				385335831C7AB6850033F77B /* ZJNaviScrollView */,
+				38952C561D10F2E500D668C4 /* ZJFunnyRotateView */,
 				383F0BC51C5701D300B7CA6D /* Assets.xcassets */,
 				383F0BC71C5701D300B7CA6D /* LaunchScreen.storyboard */,
 				383F0BCA1C5701D300B7CA6D /* Info.plist */,
@@ -447,6 +453,16 @@
 			path = ZJStarLevelView;
 			sourceTree = "<group>";
 		};
+		38952C561D10F2E500D668C4 /* ZJFunnyRotateView */ = {
+			isa = PBXGroup;
+			children = (
+				38F7EAD41D49F06D00E0A4A1 /* DribbbleAnimationPractice.zip */,
+				38952C571D10F31300D668C4 /* ZJRotateView.h */,
+				38952C581D10F31300D668C4 /* ZJRotateView.m */,
+			);
+			path = ZJFunnyRotateView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -553,6 +569,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				386C52F71CBDF5920014B47A /* ZJPhotoDetailViewController.xib in Resources */,
+				38F7EAD51D49F06D00E0A4A1 /* DribbbleAnimationPractice.zip in Resources */,
 				383F0BC91C5701D300B7CA6D /* LaunchScreen.storyboard in Resources */,
 				383F0BC61C5701D300B7CA6D /* Assets.xcassets in Resources */,
 				3847881E1CBCCA5E0042EB22 /* ZJPhotoViewController.xib in Resources */,
@@ -611,6 +628,7 @@
 				385B85701C9A551800970191 /* ZJTestViewController.m in Sources */,
 				385B856E1C9A551800970191 /* ViewController.m in Sources */,
 				385335861C7AB6B40033F77B /* ZJNaviScrollView.m in Sources */,
+				38952C591D10F31300D668C4 /* ZJRotateView.m in Sources */,
 				385B85741C9A558A00970191 /* ZJLoginManager.m in Sources */,
 				383F0C0C1C57031000B7CA6D /* ZJSearchingView.m in Sources */,
 				385B856F1C9A551800970191 /* ZJBLETableViewController.m in Sources */,
